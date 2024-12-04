@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App.css */
+
+@keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-marquee {
+    display: flex;
+    animation: marquee linear infinite;
+  }
+  
+  /* Optional: Pause animation on hover */
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+  
+
+  /* Custom styles for the time picker */
+.react-time-picker {
+  padding: 0.75rem; /* Adjust padding */
+  width: 100%; /* Full width */
+}
+
+/* Style for input */
+.react-time-picker__inputGroup {
+  display: flex;
+}
+
+/* Style for input fields inside the time picker */
+.react-time-picker__input {
+  flex: 1;
+  margin-right: 0.5rem; /* Space between hour and minute inputs */
+}
+
+/* Style for buttons (if needed) */
+.react-time-picker__button {
+  background-color: #e5e7eb; /* Tailwind's gray-300 */
+  border-radius: 0.375rem; /* Tailwind's rounded */
+}

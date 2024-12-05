@@ -22,7 +22,7 @@ const Header = () => {
             <Link to={"/"}>
               {" "}
               <img
-                src="/images/logo.png"
+                src="../images/logo.png"
                 alt="Logo"
                 className="h-[100px] md:h-auto"
               />

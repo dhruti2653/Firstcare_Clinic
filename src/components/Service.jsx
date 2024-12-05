@@ -151,10 +151,10 @@ const Service = () => {
       </p>
       </div>
       <h1 className="text-[28px] lg:text-[44px] font-bold text-center lg:text-left mt-5">
-        FirstCare is dedicated to providing you with FirstCare for your
+        First Care is dedicated to providing you with First Care Medical Clinic
       </h1>
       <p className="text-[#7a7979] text-center lg:text-left mt-2  leading-6 lg:leading-8">
-        Discover a new standard of care with FirstCare Medical. Explore our range of services from FirstCare and specialty treatments to wellness programs and health.
+        Discover a new standard of care with FirstCare Medical Clinic. Explore our range of services from First Care and specialty treatments to wellness programs and health.
       </p>
     </div>
 

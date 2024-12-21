@@ -154,7 +154,7 @@ const Service = () => {
         First Care is dedicated to providing you with First Care Medical Clinic
       </h1>
       <p className="text-[#7a7979] text-center lg:text-left mt-2  leading-6 lg:leading-8">
-        Discover a new standard of care with FirstCare Medical Clinic. Explore our range of services from First Care and specialty treatments to wellness programs and health.
+        Discover a new standard of care with First Care Medical Clinic. Explore our range of services from First Care and specialty treatments to wellness programs and health.
       </p>
     </div>
 
@@ -164,7 +164,7 @@ const Service = () => {
           <span className="text-[#D9353D]">HealthPlus</span> Your Trusted Partner in Wellness
         </h1>
         <p className="text-[#7a7979] mt-6 leading-7">
-          Discover a new standard of care with FirstCare Medical. Explore our range of services from FirstCare and specialty treatments.
+          Discover a new standard of care with First Care Medical. Explore our range of services from First Care and specialty treatments.
         </p>
         <Link to={"/service"}> <button className="bg-[#D9353D] hover:bg-black hover:text-[#b9b8b8] text-white flex h-10 font-semibold gap-3 mt-8 w-[150px] rounded-2xl items-center justify-center">
           Our Services

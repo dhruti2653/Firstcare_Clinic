@@ -58,7 +58,7 @@ const Apoiment = () => {
       <div className="relative md:w-1/2 w-full z-10 p-4 md:p-8 text-white flex items-center">
         <div>
           <h1 className="text-2xl md:text-4xl font-bold mb-4">
-            We Are A Certified and Award Winning FirstCare Clinic You Can Trust
+            We Are A Certified and Award Winning First Care Medical Clinic You Can Trust
           </h1>
           <p className="text-base md:text-lg mb-4">
             Booking an appointment at First Care Medical Clinic is quick and

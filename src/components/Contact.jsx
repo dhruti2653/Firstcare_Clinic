@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="flex flex-col md:flex-row lg:mt-24 mt-16 px-4 md:px-36">
         {/* Left Side: Contact Form */}
         <div className="flex-1 bg-white shadow-md rounded-lg p-6 mb-8 md:mr-10">
-          <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
+          <h2 className="text-3xl font-bold mb-4"> Our Contact Us</h2>
           <form>
             <div className="mb-4 ">
               <label

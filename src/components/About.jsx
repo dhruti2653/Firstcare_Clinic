@@ -6,17 +6,20 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <>
-      <div className="flex flex-col lg:flex-row w-full lg:mt-20 md:mt-36 lg:px-40 px-4">
+{/* gbhn */}
+    {/* hjkjhg */}
+    {/* ljjk */}
+      <div className="flex flex-col lg:flex-row w-full lg:mt-12 md:mt-20 lg:px-40 px-4">
         {/* Left part */}
         <div className="w-full lg:w-1/2">
           <p className="w-28 text-center h-8 mx-auto lg:mx-0  mt-7 border-2 text-[#D9353D] font-bold text-lg border-[#028DCD]">
-            About
+           About
           </p>
           <h1 className="text-[24px] lg:text-[43px] font-bold text-center lg:text-left mt-6">
-            Discover Your Optimal FirstCare Solutions
+            Discover Your Optimal First Care Solutions
           </h1>
           <p className="text-[#7a7979] text-[14px] lg:text-[15px] text-center lg:text-left px-2 mt-6 lg:mt-4 leading-6">
-            At FirstCare Medical Clinic, we are dedicated to providing high-quality, compassionate healthcare to patients of all ages. Our team of experienced professionals is committed to ensuring that every patient receives personalized care, whether it’s for routine check-ups, diagnostic services, or emergency medical treatment.
+            At First Care Medical Clinic, we are dedicated to providing high-quality, compassionate healthcare to patients of all ages. Our team of experienced professionals is committed to ensuring that every patient receives personalized care, whether it’s for routine check-ups, diagnostic services, or emergency medical treatment.
           </p>
 
           {/* Mission section */}
@@ -73,11 +76,11 @@ const About = () => {
           <div className="w-full lg:w-[500px]">
             <img src="images/about2.png" alt="about" className="h-auto w-full  lg:h-[450px]" />
           </div>
-          <div className="bg-[#028DCD] text-white text-center mt-4 p-4 rounded-lg lg:mx-9">
+          {/* <div className="bg-[#028DCD] text-white text-center mt-4 p-4 rounded-lg lg:mx-9">
             <p>
               As a tertiary referral ICU to provide state of the art care with the help of very good professionals and infrastructure.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

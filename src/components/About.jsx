@@ -13,7 +13,7 @@ const About = () => {
         {/* Left part */}
         <div className="w-full lg:w-1/2">
           <p className="w-28 text-center h-8 mx-auto lg:mx-0  mt-7 border-2 text-[#D9353D] font-bold text-lg border-[#028DCD]">
-           Our About
+           About
           </p>
           <h1 className="text-[24px] lg:text-[43px] font-bold text-center lg:text-left mt-6">
             Discover Your Optimal First Care Solutions

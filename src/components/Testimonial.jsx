@@ -60,7 +60,7 @@ const Testimonial = () => {
             </p>
           </div>
           <h1 className="text-[30px] md:text-[42px]  flex justify-center items-center  text-center lg:px-48 font-bold md:pl-20  mt-5 ">
-            Care Connect is connection to comprehensive FirstCare
+            Care Connect is connection to comprehensive First Care Medical Clinic
           </h1>
           <p className="text-[#7a7979] md:pl-20 pl-5 flex justify-center items-center text-center lg:px-52 mt-5  leading-6 text-base md:text-lg">
             Our patient-centered approach focuses on building strong

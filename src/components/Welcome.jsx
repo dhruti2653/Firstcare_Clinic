@@ -14,11 +14,11 @@ const Welcome = () => {
             Welcome
           </p>
           <h1 className="text-[24px] lg:text-[35px] font-bold px-6 lg:px-28 mt-6 lg:mr-16 text-center lg:text-left">
-            Welcome to First Care Medical journey to optimal health begins
+            Welcome to First Care Medical Clinic : journey to optimal health.
           </h1>
           <p className="text-[#7a7979] px-6 lg:px-28 mt-4 lg:mt-6 leading-7 lg:leading-7 text-center lg:text-left">
-            Welcome to FirstCare Medical, where your journey to optimal health
-            be FirstCare, We are committed to providing you with Personalized
+            Welcome to First Care Medical, where your journey to optimal health
+            be First Care, We are committed to providing you with Personalized
             and comprehensive healthcare solutions tailored to your unique
             needs.
           </p>
@@ -124,9 +124,9 @@ const Welcome = () => {
       </div>
 
       {/* Achievement Section */}
-      <div className="flex justify-center items-center px-5 mt-16">
+      {/* <div className="flex justify-center items-center px-5 mt-16">
         <div className="bg-[#D9353D] h-auto w-full lg:w-[1300px] rounded-3xl flex flex-col lg:flex-row gap-8 lg:p-16 p-10">
-          {/* First Section */}
+          First Section
           <div className="flex items-center space-x-6">
             <img
               src="/images/healing.png"
@@ -143,7 +143,7 @@ const Welcome = () => {
             </div>
           </div>
 
-          {/* Second Section */}
+          Second Section
           <div className="flex items-center space-x-6 ">
             <img
               src="/images/surgical.png"
@@ -161,7 +161,7 @@ const Welcome = () => {
             </div>
           </div>
 
-          {/* Third Section */}
+          Third Section
           <div className="flex items-center space-x-6">
             <img
               src="/images/stress.png"
@@ -178,7 +178,7 @@ const Welcome = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

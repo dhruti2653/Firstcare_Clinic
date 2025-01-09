@@ -21,6 +21,7 @@ const Contact = () => {
                 type="tel"
                 id="phone"
                 placeholder="Enter your phone number"
+                required
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
@@ -35,6 +36,7 @@ const Contact = () => {
                 type="email"
                 id="email"
                 placeholder="Enter your email"
+                required
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
@@ -49,6 +51,7 @@ const Contact = () => {
                 type="text"
                 id="subject"
                 placeholder="Enter subject"
+                required
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
@@ -62,6 +65,7 @@ const Contact = () => {
               <textarea
                 id="message"
                 placeholder="Enter your message"
+                required
                 rows="4"
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />

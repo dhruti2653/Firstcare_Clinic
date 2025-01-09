@@ -43,6 +43,23 @@ const Apoiment = () => {
     setTime(autoSetTime);
   }, []);
 
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent page reload on form submit
+
+    // Process the form data (e.g., send it to an API)
+    console.log("Form submitted", { selectedService, name, email, date, time });
+
+    // Clear form data
+    setSelectedService("");
+    setName("");
+    setEmail("");
+    setDate("");
+    setTime('10:00');
+
+    // Optionally refresh the page
+    // window.location.reload();
+  };
+
   return (
     <div
       className="h-auto md:h-[550px] w-full flex flex-col md:flex-row relative lg:px-20 px-9 mt-20"
@@ -75,48 +92,51 @@ const Apoiment = () => {
       <div className="relative md:w-1/2 w-full flex flex-col justify-center p-4 md:p-8 h-auto md:h-[550px] lg:px-12 px-7" style={{ backgroundColor: "rgba(6, 163, 218, .7)" }}>
         <h2 className="flex justify-center text-xl md:text-[35px] lg:mb-10 mb-6 text-white font-bold">Make an Appointment</h2>
 
-        {/* Service Dropdown */}
-        <select className="lg:mb-7 mb-4  lg:p-4 p-3 border rounded w-full" value={selectedService} onChange={(e) => setSelectedService(e.target.value)}>
-          <option value="">Choose a service</option>
-          {services.map((service, index) => (
-            <option key={index} value={service}>{service}</option>
-          ))}
-        </select>
+        {/* Form */}
+        <form onSubmit={handleSubmit}>
+          {/* Service Dropdown */}
+          <select className="lg:mb-7 mb-4  lg:p-4 p-3 border rounded w-full" value={selectedService} onChange={(e) => setSelectedService(e.target.value)}>
+            <option value="">Choose a service</option>
+            {services.map((service, index) => (
+              <option key={index} value={service} aria-required>{service}</option>
+            ))}
+          </select>
 
-        <div className="flex flex-col md:flex-row gap-4 mb-4">
-          {/* Name Input */}
-          <input type="text" className="lg:mb-4 mb-2 lg:p-4 p-3 border rounded w-full" placeholder="Your name" value={name} onChange={(e) => setName(e.target.value)} />
+          <div className="flex flex-col md:flex-row gap-4 mb-4">
+            {/* Name Input */}
+            <input type="text" className="lg:mb-4 mb-2 lg:p-4 p-3 border rounded w-full" placeholder="Your name" required value={name} onChange={(e) => setName(e.target.value)} />
 
-          {/* Email Input */}
-          <input type="email" className="lg:mb-4 mb-2  lg:p-4 p-3 border rounded w-full" placeholder="Your email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        </div>
+            {/* Email Input */}
+            <input type="email" className="lg:mb-4 mb-2  lg:p-4 p-3 border rounded w-full" placeholder="Your email" required value={email} onChange={(e) => setEmail(e.target.value)} />
+          </div>
 
-        <div className="flex flex-col md:flex-row gap-4 lg:mb-7 mb-2 ">
-          {/* Appointment Date */}
-          <input
-            type="date"
-            className="lg:p-4 p-3 border rounded w-full"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-          />
+          <div className="flex flex-col md:flex-row gap-4 lg:mb-7 mb-2 ">
+            {/* Appointment Date */}
+            <input
+              type="date"
+              className="lg:p-4 p-3 border rounded w-full"
+              value={date}
+              required
+              onChange={(e) => setDate(e.target.value)}
+            />
 
-          {/* Appointment Time Picker */}
-          <TimePicker
-            className="w-full p-3 border rounded bg-white "
-            onChange={setTime}
-            value={time}
-            disableClock={true}
-            clearIcon={null}
-            clockIcon={null}
-          />
-        </div>
+            {/* Appointment Time Picker */}
+            <TimePicker
+              className="w-full p-3 border rounded bg-white "
+              onChange={setTime}
+              value={time}
+              disableClock={true}
+              clearIcon={null}
+              clockIcon={null}
+              required
+            />
+          </div>
 
-        {/* Submit Button */}
-        <button className="w-full bg-[#091E3E] text-white p-3 rounded lg:mt-0 mt-4 hover:bg-white hover:text-[#091E3E] transition duration-300 cursor-pointer">
-          <Link to={"/contact"}>
-            <span>Submit</span>
-          </Link>
-        </button>
+          {/* Submit Button */}
+          <button type="submit" className="w-full bg-[#091E3E] text-white p-3 rounded lg:mt-0 mt-4 hover:bg-white hover:text-[#091E3E] transition duration-300 cursor-pointer">
+            Submit
+          </button>
+        </form>
       </div>
     </div>
   );

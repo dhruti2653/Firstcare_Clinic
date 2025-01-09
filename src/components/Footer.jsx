@@ -135,6 +135,7 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Enter Your Email Here"
+                  required
                   className="px-5 py-2 text-gray-600 text-[13px] w-[70%] md:w-[90%]"
                 />
                 <button
